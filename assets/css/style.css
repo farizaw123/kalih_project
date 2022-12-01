@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Navbar */
+body{
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+#header a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#main-nav{
+    background-color: transparent;
+    position: relative;
+    padding-top:    20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: 10%;
+    z-index: 12;
+    transition: all 3s ease-out;
+}
+
+#main-nav a.title{
+    position: absolute;
+    left: 56px;
+    width: 120px;
+}
+/* Navbar */
+
+
+
+/* dashboard */
+/* Section head */
+.head{
+    position: absolute;
+    top: 0;
+    height: 740px;
+    width: 100%;
+}
+
+.head .carousel{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.head .home1 img{
+    filter: brightness(60%);
+    height: 100%;
+    width:110%;
+    object-fit: cover;
+    object-position: 50% 42%;
+    z-index: 0;
+}
+
+.head .home2 img{
+    filter: brightness(60%);
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    object-position: 50% 42%;
+    z-index: 0;
+}
+
+.head .home3 img{
+    filter: brightness(60%);
+    height: 100%;
+    width:110%;
+    object-fit: cover;
+    object-position: 30% 65%;
+    z-index: 0;
+}
+
+.judul{
+    z-index: 1;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 56px;
+    font-weight: 400;
+    color: white;
+    width: 655px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1000ms;
+}
+
+.subjudul{
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    width: 505px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1000ms;
+}
+
+.kotak{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    margin-top: 30px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1000ms;
+}
+
+.kotak .kiri{
+    height: 60px;
+    width: 280px;
+    background-color: #34513F;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1000ms;
+}
+
+.kotak .kiri p{
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1000ms;
+}
+
+.kotak .kanan{
+    height: 60px;
+    width: 80px;
+    background-color: #1F2823;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1000ms;
+}
+
+.kotak .kanan i{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 13px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1000ms;
+}
+
+
+
+/* responsive hp */
+@media screen and (min-width: 228px ) and (max-width: 420px) {
+    .judul {
+        font-size: 28px;
+        width: 330px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .subjudul{
+        top: 30%;
+        font-size: 13.5px;
+        width: 320px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .kotak{
+        display: flex;
+        z-index: 1;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        margin-top: 30px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .kotak .kiri{
+        height: 40px;
+        width: 150px;
+        background-color: #34513F;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .kotak .kiri p{
+        font-size: 12px;
+        margin-left: 10px;
+        color: white;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .kotak .kanan{
+        height: 40px;
+        width: 60px;
+        background-color: #1F2823;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+    
+    .kotak .kanan i{
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 19px;
+        margin-top: 10px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+    
+  }
+/* responsive hp */
+
+
+/* responsive Tab */
+@media screen and (min-width: 436px) and (max-width: 685px) {
+    .judul {
+        font-size: 38px;
+        width: 440px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .subjudul{
+        top: 35%;
+        font-size: 13px;
+        width: 330px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .kotak{
+        display: flex;
+        z-index: 1;
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        margin-top: 30px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .kotak .kiri{
+        height: 40px;
+        width: 150px;
+        background-color: #34513F;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .kotak .kiri p{
+        font-size: 12px;
+        margin-left: 10px;
+        color: white;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .kotak .kanan{
+        height: 40px;
+        width: 60px;
+        background-color: #1F2823;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+    
+    .kotak .kanan i{
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 19px;
+        margin-top: 10px;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1000ms;
+    }
+
+    .head img{
+        width: 10px;
+    }
+    
+  }
+/* responsive Tab */
+/* Section head */
+
+
+
+
+
+
+/* Section isi-1 */
+.isi-1{
+    position: absolute;
+    top: 100%;
+    height: 430px;
+    width: 100%;
+    display: flex;
+}
+
+.container-judul{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 50%;
+    padding: 20px;
+}
+
+.content-atas{
+   font-size: 40px;
+   font-weight: 400;
+}
+
+.content-tengah{
+    margin-top: 20px;
+    margin-left: 30%;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.content-bawah{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 400; 
+}
+
+.container-subjudul{
+    margin-left: 12%;
+    margin-top: 3%;
+    width: 60%;
+}
+
+.container-subtitle p{
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+.container-img img{
+    width: 20%;
+    float: right;
+}
+
+
+.logo img {
+    z-index: 3;
+    position: absolute;
+    top: -52%;
+    right: 2%;
+    object-fit: contain;
+    width: 35%;
+}
+
+.bunga img{
+    z-index: 4;
+    position: absolute;
+    top: 12%;
+    right: -2%;
+    object-fit: contain;
+    width: 30%;
+}
+
+
+/* @media screen and (max-widht: 360px) {
+
+} */
+
+/* Section isi-1 */
+
+
+/* Section about */
+.about{
+    position: absolute;
+    top: 160%;
+    right: 0;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin-top: 3%;
+    background-color: black;
+}
+
+.about .container1{
+    width: 15%;
+    height: 200px;
+    padding: 10px;
+    background-color: #FFFFF5;
+
+}
+
+.about .container2{
+    width: 15%;
+    height: 200px;
+    padding: 10px;
+    background-color: #EDECDA;
+
+}
+
+.about .container3{
+    width: 15%;
+    height: 200px;
+    padding: 10px;
+    background-color: #FFFFF5;
+
+}
+
+.about .container4{
+    width: 15%;
+    height: 200px;
+    padding: 10px;
+    background-color: #34513F;
+}
+
+.about .container4 .knowmore p{
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.about .container4 .button1 button{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 130px;
+    border-radius: 20px;
+}
+
+.about .container5img{
+    width: 50%;
+    height: 130px;
+}
+
+.container5img img{
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    
+}
+
+
+.angkastatis{
+    margin-top: 10px;
+}
+
+.angkastatis p{
+    margin-top: 20%;
+    font-size: 30px;
+    font-weight: 400;
+    color: #325140;
+}
+
+/* Section about */
+
+
+/* section carousel */
+.slide-bwh{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 192.5%;
+}
+
+.slide-bwh img{
+    width: 100%;
+}
+
+.carousel img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+/* section carousel */
+/* dashboard */
